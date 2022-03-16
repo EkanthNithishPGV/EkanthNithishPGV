@@ -4,6 +4,7 @@ import time
 
 def action(i):
     url = "https://www.alphavantage.co/query?function=OVERVIEW&symbol={}&apikey=demo".format(i)
+    #api key required
     r = requests.get(url)
     time.sleep(13)
     data = r.json()
